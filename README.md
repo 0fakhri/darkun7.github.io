@@ -1,16 +1,19 @@
 <p align="center">
-	<a href="http://darkun7github.io"><img style="height:200px;" src="https://drive.google.com/uc?id=1PtdVgdcMAK0kzyrwXbdHofyfa6r7JA2D"></img></a><br>
+	<a href="http://darkun7github.io"><img style="max-height:100px;" src="https://drive.google.com/uc?id=1PtdVgdcMAK0kzyrwXbdHofyfa6r7JA2D"></img></a><br>
 	<b>E-Education Native Website that written in HTML, CSS, and JS</b>
 </p>
-# Perancangan Website
-# Tema
-E-Education
-# Anggota
+
+[![Build Status](https://travis-ci.org/pmmp/PocketMine-MP.svg?branch=master)](https://github.com/darkun7/darkun7.github.io)
+### Topic
+[E-Education](https://darkun7.github.io/index.html)
+## Description
+  - This repository created to fulfill requirement of Lesson **Website Design** Class **C**.
+  - Restriction of this project is couldn't using bootstrap or any other supporting framework.
+### Contributor
  * [Iosky07](https://github.com/iosky07) - Yoski Tanjung
  * [Darkun7](https://github.com/darkun7) - Hartawan Bahari Mulyadi
-# Lincense
-Copyright [yyyy] [name of copyright owner]
-
+### Lincense
+Copyright 2019 Darkun7
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
