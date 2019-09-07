@@ -1,14 +1,14 @@
 <p align="center">
-	<a href="http://darkun7github.io"><img src="https://drive.google.com/uc?id=1PtdVgdcMAK0kzyrwXbdHofyfa6r7JA2D"></img></a><br>
-	<b>A highly customisable, open source server software for Minecraft: Bedrock Edition written in PHP</b>
+	<a href="http://darkun7github.io"><img style="height:200px;" src="https://drive.google.com/uc?id=1PtdVgdcMAK0kzyrwXbdHofyfa6r7JA2D"></img></a><br>
+	<b>E-Education Native Website that written in HTML, CSS, and JS</b>
 </p>
-# Perancangan Website C
-## Tema
+# Perancangan Website
+# Tema
 E-Education
-## Anggota
+# Anggota
  * [Iosky07](https://github.com/iosky07) - Yoski Tanjung
  * [Darkun7](https://github.com/darkun7) - Hartawan Bahari Mulyadi
-## Lincense
+# Lincense
 Copyright [yyyy] [name of copyright owner]
 
 Licensed under the Apache License, Version 2.0 (the "License");
