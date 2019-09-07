@@ -6,7 +6,7 @@
 [![Build Status](https://travis-ci.org/pmmp/PocketMine-MP.svg?branch=master)](https://github.com/darkun7/darkun7.github.io)
 ### Topic
 [E-Education](https://darkun7.github.io/index.html)
-## Description
+### Description
   - This repository created to fulfill requirement of Lesson **Website Design** Class **C**.
   - Restriction of this project is couldn't using bootstrap or any other supporting framework.
 ### Contributor
