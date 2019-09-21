@@ -1,0 +1,113 @@
+:root {
+			  --abu-abu: #fafafa;
+			  --biru: #6e75ff;
+			  --primer: #6e75ff;
+			  --sekunder: #b0b0b0;
+			  --primer-hover: #999eff;
+			  --sekunder-hover: #c0c0c0;
+			}
+            body{
+              font-family: sans-serif;
+              font-size: 11pt;
+			  margin: 0;
+			  background-image: url(https://wallpapercave.com/wp/wp2467147.png);
+            }
+			.content{
+			  width:100%;
+			}
+            .formulir,
+			.data-akun{
+              background: var(--abu-abu);
+              padding: 20px;
+			  margin: 60px 5% 60px 5%;
+              border-radius: 15px;
+			  max-width:40%;
+			  min-width: 300px;
+			  position: absolute;
+              /*margin: 15px 30%;*/
+            }
+			@media only screen and (max-width: 920px) {
+			  .formulir,
+			  .data-akun{
+				position: relative;
+				margin-left: auto;
+                margin-right: auto;
+			  }
+			}
+			.formulir{
+			  left: 0px;
+			}
+			.data-akun{
+			  right: 0px;
+			}
+            input,
+            select,
+            textarea
+            {
+              background: transparent;
+              color : var(--biru);
+              border: 0;
+              padding: 7px 0px;
+              border-bottom: 1px solid #ccc;
+              width: 100%;
+              margin-bottom: 10px;
+            }
+            input::placeholder{
+              color: grey;
+            }
+            input:focus{
+              border-bottom: 1px solid var(--biru);;
+            }
+            label{
+              width: 100%;
+              text-align: center;
+              font-weight: bold;
+              font-size: 15pt;
+            }
+            input[type=radio],
+            input[type=checkbox]
+            {
+              width: auto;
+              margin: 10px 5px;
+            }
+            button.primer{
+              background-color: var(--primer);
+              border-radius:10px;
+              border:1px solid var(--primer);
+              display:inline-block;
+              color:#ffffff;
+              font-size:17px;
+              padding:10px 31px;
+              margin: 0px 10px;
+            }
+            button.primer:hover{
+              background-color:var(--primer-hover);
+            }
+            button.sekunder{
+              background-color: var(--sekunder);
+              border-radius: 10px;
+              border:1px solid var(--sekunder);
+              display:inline-block;
+              color:#ffffff;
+              font-size:17px;
+              padding:10px 31px;
+            }
+            button.sekunder:hover{
+              background-color: var(--sekunder-hover);
+            }
+			btn-group{
+			  margin-left: auto;
+              margin-right: auto;
+			}
+            i,
+            img{
+              height: 55px;
+              display: block;
+              margin-left: auto;
+              margin-right: auto;
+              cursor: pointer;
+            }
+			.stupid-nav{
+			  height:60px;
+			  background-image: linear-gradient(to right, aqua , blue);
+			}
