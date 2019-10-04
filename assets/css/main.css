@@ -5,6 +5,7 @@
     font-weight: normal;
     font-style: normal;
 }
+@import url('https://fonts.googleapis.com/css?family=Francois+One&display=swap');
 :root {
   --color-pink: #FF7A7A;
   --color-orange: #FFB167;
@@ -25,7 +26,11 @@ html, body{
   height: 100%;
   margin: 0px;
   }
-
+h1, h2, h3, h4{
+  font-family: 'Francois One', sans-serif;
+}
+h1{font-size: 3rem;}
+h2{font-size: 2rem;}
 .sticky-top{
   position:fixed;width:100%;z-index:1
 }
@@ -33,7 +38,7 @@ html, body{
   top:0
 }
 body {
-  background-color: lightblue;
+  background-color: #fff;
   font-size: 16px;
 	font-family: 'monospac821_btbold';
 /*   font-family: Helvetica,sans-serif; */
@@ -57,7 +62,8 @@ a:hover {
   margin: 5px 5px;
 }
 .web-title {
-  font-family: 'monospac821_btbold';
+  padding-top: 90px;
+  font-size: 60px;
   text-align: center;
 }
 section{
@@ -110,6 +116,18 @@ section{
       margin-left: auto !important;
       margin-right: auto !important;
     }
+    .web-title{
+      font-size: 45px;
+      line-height: 3rem;
+    }
+    img.ilus{
+      display: none;
+    }
+  }
+  .centered-btn{
+    display: block;
+    margin: 0 auto;
+    width: 200px;
   }
   .centered{
     display: block;
@@ -128,6 +146,47 @@ section{
     position: static;
     display: flex !important;
     justify-content: space-around !important;
+  }
+  /*##############################
+    ##########Formulir############
+    ##############################*/
+  .formulir{
+    background: var(--color-light-grey);
+    padding: 20px;
+    border-radius: 15px;
+    max-width:40%;
+    min-width: 300px;
+    margin: 10px auto 0px auto;
+  }
+  input,
+  select,
+  textarea{
+    background: #fff;
+    color : var(--biru);
+    border: 0;
+    padding: 7px 10px;
+    border: 1px solid var(--color-dark-grey);
+    border-radius: 5px;
+    font-size: 15px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  input::placeholder{
+    color: grey;
+  }
+  input:focus{
+    /* border-bottom: 1px solid var(--color-dark-grey); */
+  }
+  label{
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15pt;
+  }
+  input[type=radio],
+  input[type=checkbox]{
+    width: auto;
+    margin: 10px 5px;
   }
 /*##############################
   ##########Navigation##########
@@ -344,9 +403,6 @@ h1 {
 h1, h2, h3 {
 
 } */
-/*##############################
-  ############Form##############
-  ##############################*/
 
 /*##############################
   ############Footer############
@@ -362,11 +418,43 @@ h1, h2, h3 {
 ul.contact,
 ul.site-map{
   list-style: none;
+  padding: 0 10px;
 }
 ul.contact li a,
 ul.site-map li a{
   color: var(--color-light-grey);
 }
+a i{
+  font-size: 24px;
+  color: #fff;
+  margin: 0 3px;
+}
+a i:hover{
+  font-weight: normal !important;
+  text-decoration: none;
+}
+.contact i{
+  font-size: 12px;
+  margin-left: 0 3px;
+}
+
+.contact i:hover,
+.contact a:hover,
+.site-map a:hover{
+  font-weight: normal !important;
+  text-decoration: none;
+  color: var(--color-pink);
+}
+.fa-instagram:hover{
+  background-image: -webkit-linear-gradient(-90deg, #4f5bd5, #962fbf, #d62976, #fa7e1e, #feda75);
+  color:transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+/* .fa-instagram:hover{color: #ff0084 ;} */
+.fa-facebook-square:hover{color: #3b5998 ;}
+.fa-twitter-square:hover{color: #00aced ;}
+.fa-line:hover{color: #18a300 ;}
 /*##############################
   ############Button############
   ##############################*/

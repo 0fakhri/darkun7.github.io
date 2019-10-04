@@ -6,8 +6,8 @@
 	<link rel="shortcut icon" type="image/png" href="assets/img/favicon.ico">
   <link rel="stylesheet" href="assets/css/homepage.css" type="text/css" charset="utf-8">
   <link rel="stylesheet" href="assets/css/main.css" type="text/css" charset="utf-8">
-	<link rel="stylesheet" href="assets/css/fa-svg-with-js.css">
-
+  <link href="https://fonts.googleapis.com/css?family=Francois+One&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a6281931cd.js" crossorigin="anonymous"></script>
   </head>
   <body>
   <!-- /*Navbar START*/ -->
@@ -37,7 +37,9 @@
       <div class="banner-inner">
         <div class="banner-content">
           <h1 class="web-title">PLANET BELAJAR</h1>
-          <a href="#" class="btn-lb-outline">Daftar Sekarang!</a>
+          <div class="centered-btn">
+            <a href="#" class="btn-lb-outline">Daftar Sekarang!</a>
+          </div>
         </div>
       </div>
     </div>
@@ -49,12 +51,13 @@
         <p>Praesent sapien felis, ultricies sit amet luctus sit amet, tempor in quam. Suspendisse potenti. Praesent rhoncus erat est, non pellentesque neque maximus non. Proin ornare libero a nunc ultrices suscipit. Proin non porttitor est. Aliquam viverra vehicula enim, nec blandit ex tempor at. Nullam commodo at elit ac luctus. Proin sit amet nisl eu quam tempus accumsan. Duis a orci vehicula, interdum nisi a, bibendum sem. Nullam euismod eget ipsum vitae luctus. Nulla id nulla auctor, eleifend nisl nec, congue augue. </p>
       </div>
       <div class="grid-content col-3">
-        <img class="centered" src="assets/img/illus-00.png">
+        <img class="centered ilus" src="assets/img/illus-00.png">
       </div>
     </div>
   </section>
   <section id="testimoni">
     <div class="grid centered">
+      <h2 id="section-title">TESTIMONI</h2>
       <div class="grid-content col-3">
         <img src="assets/img/stud-00.png" alt="Testimoni Siswa">
         <p>Nunc sed consequat risus. Quisque massa enim, laoreet rutrum erat. Curabitur lobortis porta neque id viverra.</p>
@@ -68,13 +71,16 @@
         <p>Nunc sed consequat risus. Quisque massa enim, laoreet rutrum erat. Curabitur lobortis porta neque id viverra.</p>
       </div>
     </div>
-    <a href="#" class="btn-lb-outline">Tampilkan Semua</a>
+    <div class="centered-btn">
+      <a href="#" class="btn-lb-outline">Tampilkan Semua</a>
+    </div>
+
   </section>
   <section id="pendaftaran">
-    <div class="section-pendaftaran">
+    <div class="grid centered">
       <div class="register-box">
-        <h2>PENDAFTARAN</h2>
-        <form class="form-pendaftaran">
+        <form class="formulir" style="margin-top: 100px;">
+          <h2 id="section-title">PENDAFTARAN</h2>
           <input type="text" value="" placeholder="Nama Lengkap">
           <input type="email" value="" placeholder="Email">
           <input type="password" value="" placeholder="Password">
@@ -86,20 +92,25 @@
   </section>
   <section class="justified" id="mentor">
     <div class="grid centered">
-      <div class="grid-content col-4">
+      <h2 id="section-title">MENTOR</h2>
+      <div class="grid-content col-2">
         <img src="assets/img/mentor-00.png" alt="Mentor">
+        <h3>Nama Mentor</h3>
         <p>Nunc sed consequat risus. Quisque massa enim, laoreet rutrum erat. Curabitur lobortis porta neque id viverra.</p>
       </div>
-      <div class="grid-content col-4">
+      <div class="grid-content col-2">
         <img src="assets/img/mentor-01.png" alt="Mentor">
+        <h3>Nama Mentor</h3>
         <p>Nunc sed consequat risus. Quisque massa enim, laoreet rutrum erat. Curabitur lobortis porta neque id viverra.</p>
       </div>
-      <div class="grid-content col-4">
+      <div class="grid-content col-2">
         <img src="assets/img/mentor-02.png" alt="Mentor">
+        <h3>Nama Mentor</h3>
         <p>Nunc sed consequat risus. Quisque massa enim, laoreet rutrum erat. Curabitur lobortis porta neque id viverra.</p>
       </div>
-      <div class="grid-content col-4">
+      <div class="grid-content col-2">
         <img src="assets/img/mentor-03.png" alt="Mentor">
+        <h3>Nama Mentor</h3>
         <p>Nunc sed consequat risus. Quisque massa enim, laoreet rutrum erat. Curabitur lobortis porta neque id viverra.</p>
       </div>
     </div>
@@ -128,10 +139,14 @@
         <div class="grid-content col-3">
           <h3>Sosial</h3>
           <!-- Social media icon using Font Awasome will be here -->
+          <a href="https://www.instagram.com/" ><i class="fab fa-instagram" title="Sosmed Instagram"></i></a>
+          <a href="https://www.fb.com/" ><i class="fab fa-facebook-square" title="Sosmed Facebook"></i></a>
+          <a href="https://www.twitter.com/" ><i class="fab fa-twitter-square" title="Sosmed Twitter"></i></a>
+          <a href="https://www.line.com/" ><i class="fab fa-line" title="Sosmed Line"></i></a>
           <h3>Kontak</h3>
           <ul class="contact">
-            <li>(0331) 4870000</li>
-            <li><a href="mailto:cs@planetbelajar.com">cs@planetbelajar.com</a></li>
+            <li><a href="mailto:cs@planetbelajar.com"><i class="fas fa-phone-alt"></i>(0331) 4870000</a></li>
+            <li><a href="mailto:cs@planetbelajar.com"><i class="fas fa-envelope-open"></i>cs@planetbelajar.com</a></li>
           </ul>
         </div>
       </div>

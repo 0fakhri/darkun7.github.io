@@ -1,11 +1,21 @@
 section{
   min-height: 500px;
 }
-
+#section-title{
+  text-align: center;
+  margin-bottom: 10px;
+}
 #home-banner{
+  background-image: url('../../assets/img/bg-homepage.png');
+  padding-top: 60px;
   height: 680px;
 }
-#mentor img,
+#reason{
+  color: white;
+  background-color: var(--color-dark-blue);
+  height: 450px;
+  padding: 20px;
+}
 #testimoni img{
   border-radius: 400px;
   width:35%;
@@ -15,9 +25,12 @@ section{
   margin-right: auto;
 }
 #mentor img{
-  width: 160px;
+  border-radius: 20px;
+  width: 125px;
   margin-left: auto;
   margin-right: auto;
+  float: left;
+  margin: 15px;
 }
 #testimoni .grid-content{
   background-color: #EFEFEF;
@@ -25,10 +38,23 @@ section{
   max-width: 350px;
   border-radius: 18px;
 }
+#mentor{
+  display:inline-block;
+  vertical-align:top;
+}
 #mentor .grid-content{
-  background-color: #EFEFEF;
-  margin: 2%;
-  /* margin: 10px 12px; */
-  max-width: 300px;
   border-radius: 18px;
+}
+#mentor h3{
+  margin-bottom: 5px;
+}
+#mentor p{
+  display:block;
+  float: none;
+}
+#pendaftaran{
+  background-image: url('../../assets/img/bg-decorative-darkblue.png');
+}
+#pendaftaran h2#section-title{
+  margin-top: 0px;
 }
