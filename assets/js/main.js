@@ -15,8 +15,9 @@ $("a").on('click', function(event) {
 });
 
   /*===Navbar===*/
+$(document).ready(function(){
 var isActive = false;
-$('.menu').on('click', function() {
+$('.menu').on('click', function(event) {
   if (isActive){
     $(this).removeClass('active');
     $('body').removeClass('menu-open');
@@ -25,4 +26,5 @@ $('.menu').on('click', function() {
     $('body').addClass('menu-open');
   }
   isActive = !isActive;
+});
 });

@@ -286,6 +286,7 @@ nav .btn-lb{
     top: 20px;
     right: 20px;
     z-index: 999;
+    cursor: pointer;
   }
   .bar,
   .bar::before,
