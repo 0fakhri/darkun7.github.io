@@ -1,3 +1,5 @@
+console.log("Main.JS Connected");
+  /*===Smooth Scroll===*/
 $(document).ready(function(){
 $("a").on('click', function(event) {
  if (this.hash !== "") {
@@ -10,4 +12,17 @@ $("a").on('click', function(event) {
    });
  }
 });
+});
+
+  /*===Navbar===*/
+var isActive = false;
+$('.menu').on('click', function() {
+  if (isActive){
+    $(this).removeClass('active');
+    $('body').removeClass('menu-open');
+  } else{
+    $(this).addClass('active');
+    $('body').addClass('menu-open');
+  }
+  isActive = !isActive;
 });
