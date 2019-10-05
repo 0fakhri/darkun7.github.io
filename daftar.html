@@ -3,11 +3,50 @@
   <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Tentang-Planet Belajar</title>
+  <title>Daftar-Planet Belajar</title>
   <link rel="shortcut icon" type="image/png" href="assets/img/favicon.ico">
   <link rel="stylesheet" href="assets/css/main.css" type="text/css" charset="utf-8">
   <link href="https://fonts.googleapis.com/css?family=Francois+One&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/a6281931cd.js" crossorigin="anonymous"></script>
+
+  <style media="screen">
+    section#login{
+      background-image: url('assets/img/bg-decorative-darkblue.png');
+      background-position: bottom;
+      background-repeat: no-repeat;
+      background-size: 100% 45%;
+    }
+    .formulir{
+      max-width: 80%;
+    }
+    #section-title{
+      text-align: center;
+      margin: 5px 0;
+    }
+    form .btn-lb{
+      margin-top: 10px;
+    }
+    form .mime{
+      text-align: center;
+      margin-top: 0px;
+    }
+    .ilus{
+      margin-top: 120px;
+      margin-left: 20%;
+      width: 196px;
+    }
+    .motd{
+      text-align: center;
+      margin-left: 12;
+      width: 310px;
+      color: #fff;
+    }
+    @media only screen and (max-width: 768px) {
+      .motd{
+        width: auto;
+      }
+    }
+  </style>
   </head>
   <body>
   <!-- /*Navbar START*/ -->
@@ -32,31 +71,28 @@
   <a href="javascript:void(0);" onclick="toggleNav()"><div class="menu"><span class="bar"></span></div></a>
   <!-- /*Navbar END*/ -->
   <!-- /*Content START*/ -->
-  <section id="breadcrumb">
-    <ul class="bc-inline">
-      <a href="index.html">Beranda</a>
-      <li id="now">Tentang</li>
-    </ul>
-  </section>
-  <section id="default">
-    <h2>Tentang "Planet Belajar"</h2>
-    <p>
-      Integer rutrum velit ut suscipit ultrices. Vivamus scelerisque commodo quam eget vulputate. Fusce pretium orci ac tempor placerat. Cras varius velit quam, sed condimentum mi vestibulum nec. Nullam ut nulla vitae sapien convallis malesuada. Aliquam erat volutpat. Pellentesque a ex est. In dictum finibus lectus, a tincidunt massa sagittis id.
-    </p>
-    <p class="quote">
-      Mauris mi erat, aliquam vel efficitur sed, convallis vitae arcu. Sed feugiat ipsum id rhoncus malesuada. Sed tristique purus eget molestie ullamcorper. Ut in interdum neque. Nunc sed consequat risus. Quisque massa enim, luctus vitae neque sed, laoreet rutrum erat. Curabitur lobortis porta neque id viverra.
-    </p>
+  <section id="login">
     <div class="grid centered">
-      <div class="grid-content col-1">
-        <p>Ut vel malesuada leo. Proin rhoncus velit mi, quis sodales orci ultrices vel. Nullam aliquam pretium pretium. Integer placerat tincidunt mauris, a maximus enim tempor id. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis dui quis tincidunt tristique. Vivamus malesuada euismod dolor a volutpat.
-        </p>
+      <div class="grid-content col-2">
+        <div class="register-box">
+          <form class="formulir" style="margin-top: 100px;">
+            <h2 id="section-title">DAFTAR</h2>
+            <input type="text" value="" placeholder="Nama Lengkap">
+            <input type="email" value="" placeholder="Email">
+            <input type="password" value="" placeholder="Password">
+            <input type="password" value="" placeholder="Konfirmasi Password">
+            <input class="btn-lb" type="submit" value="Daftar" title="Dengan mendaftar, anda menyetujui kebijakan penggunaan dari Planet Belajar">
+            <p class="mime">Sudah punya akun? <a href="masuk.html">Masuk</a></p>
+          </form>
+        </div>
       </div>
-      <div class="grid-content col-3">
-        <img src="assets/img/illus-00.png" alt="dummy image">
+      <div class="grid-content col-4">
+        <img class="centered ilus" src="assets/img/illus-00.png">
+        <h3 class="motd">Belajar jadi makin asik, bersama Planet Belajar</h3>
       </div>
     </div>
   </section>
-  <!-- /*Content END*/ -->
+    <!-- /*Content END*/ -->
   <!-- /*Footer START*/ -->
   <footer>
     <div class="footer">

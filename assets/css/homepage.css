@@ -7,8 +7,15 @@ section{
 }
 #home-banner{
   background-image: url('../../assets/img/bg-homepage.png');
-  padding-top: 60px;
+  background-size: length;
+  background-repeat: no-repeat;
   height: 680px;
+  padding-top: 80px;
+}
+@media screen and (max-width: 768px) {
+  #home-banner{
+    background-size: cover;
+  }
 }
 #reason{
   color: white;
