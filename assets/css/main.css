@@ -25,6 +25,8 @@
 html, body{
   height: 100%;
   margin: 0px;
+  scroll-behavior: smooth;
+  transition-duration: 5000ms;
   }
 h1, h2, h3, h4{
   font-family: 'Francois One', sans-serif;
@@ -490,7 +492,7 @@ a i:hover{
   color: var(--color-pink);
 }
 .fa-instagram:hover{
-  background-image: -webkit-linear-gradient(-90deg, #4f5bd5, #962fbf, #d62976, #fa7e1e, #feda75);
+  background-image: -webkit-linear-gradient(-45deg, #4f5bd5, #962fbf, #d62976, #fa7e1e, #feda75);
   color:transparent;
   -webkit-background-clip: text;
   background-clip: text;

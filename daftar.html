@@ -75,15 +75,19 @@
     <div class="grid centered">
       <div class="grid-content col-2">
         <div class="register-box">
-          <form class="formulir" style="margin-top: 100px;">
-            <h2 id="section-title">DAFTAR</h2>
-            <input type="text" value="" placeholder="Nama Lengkap">
-            <input type="email" value="" placeholder="Email">
-            <input type="password" value="" placeholder="Password">
-            <input type="password" value="" placeholder="Konfirmasi Password">
-            <input class="btn-lb" type="submit" value="Daftar" title="Dengan mendaftar, anda menyetujui kebijakan penggunaan dari Planet Belajar">
-            <p class="mime">Sudah punya akun? <a href="masuk.html">Masuk</a></p>
-          </form>
+        <form action="login.html" class="formulir" style="margin-top: 100px;">
+          <h2 id="section-title">PENDAFTARAN</h2>
+          <input type="text" value="" placeholder="Nama Lengkap" required>
+		  <small id="for-fullname"></small>
+          <input type="email" value="" placeholder="Email" id="email"required>
+		  <small id="for-email"></small>
+          <input type="password" value="" placeholder="Password" id="pswd" required>
+		  <small id="for-pswd"></small>
+          <input type="password" value="" placeholder="Konfirmasi Password" id="pswd-verify" required>
+		  <small id="for-pswd-verify"></small>
+          <input class="btn-lb" type="submit" value="Daftar">
+        </form>
+		</div>
         </div>
       </div>
       <div class="grid-content col-4">

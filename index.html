@@ -39,7 +39,7 @@
         <div class="banner-content">
           <h1 class="web-title">PLANET BELAJAR</h1>
           <div class="centered-btn">
-            <a href="#" class="btn-lb-outline">Daftar Sekarang!</a>
+            <a href="#pendaftaran" class="btn-lb-outline">Daftar Sekarang!</a>
           </div>
         </div>
       </div>
@@ -79,12 +79,16 @@
   <section id="pendaftaran">
     <div class="grid centered">
       <div class="register-box">
-        <form class="formulir" style="margin-top: 100px;">
+        <form action="login.html" class="formulir" style="margin-top: 100px;">
           <h2 id="section-title">PENDAFTARAN</h2>
-          <input type="text" value="" placeholder="Nama Lengkap">
-          <input type="email" value="" placeholder="Email">
-          <input type="password" value="" placeholder="Password">
-          <input type="password" value="" placeholder="Konfirmasi Password">
+          <input type="text" value="" placeholder="Nama Lengkap" required>
+		  <small id="for-fullname"></small>
+          <input type="email" value="" placeholder="Email" id="email"required>
+		  <small id="for-email"></small>
+          <input type="password" value="" placeholder="Password" id="pswd" required>
+		  <small id="for-pswd"></small>
+          <input type="password" value="" placeholder="Konfirmasi Password" id="pswd-verify" required>
+		  <small id="for-pswd-verify"></small>
           <input class="btn-lb" type="submit" value="Daftar">
         </form>
       </div>
@@ -127,11 +131,14 @@
         <div class="grid-content col-4">
           <h3>Site Map</h3>
           <ul class="site-map">
-            <li><a href="#">Link 1</a></li>
-            <li><a href="#">Link 2</a></li>
-            <li><a href="#">Link 3</a></li>
-            <li><a href="#">Link 4</a></li>
-            <li><a href="#">Link 5</a></li>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="tentang.html">Tentang</a></li>
+            <li><a href="paket-sd.html">Pendidikan SD</a></li>
+            <li><a href="paket-smp.html">Pendidikan SMP</a></li>
+            <li><a href="paket-sma.html">Pendidikan SMA</a></li>
+            <li><a href="agenda.html">Agenda</a></li>
+            <li><a href="sistem-pembayaran.html">Sistem Pembayaran</a></li>
+            <li><a href="peraturan.html">Peraturan</a></li>
           </ul>
         </div>
         <div class="grid-content col-3">

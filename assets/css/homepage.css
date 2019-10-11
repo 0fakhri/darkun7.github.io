@@ -7,7 +7,7 @@ section{
 }
 #home-banner{
   background-image: url('../../assets/img/bg-homepage.png');
-  background-size: length;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   height: 680px;
   padding-top: 80px;
@@ -61,6 +61,8 @@ section{
 }
 #pendaftaran{
   background-image: url('../../assets/img/bg-decorative-darkblue.png');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 #pendaftaran h2#section-title{
   margin-top: 0px;
