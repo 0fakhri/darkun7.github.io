@@ -8,10 +8,11 @@
 [E-Education](https://darkun7.github.io/index.html)
 ### Description
   - This repository created to fulfill requirement of Lesson **Website Design** Class **C**.
-  - Restriction of this project is couldn't using bootstrap or any other supporting framework.
+  - Restriction of this project is couldn't using bootstrap, styling Library or any other supporting framework.
 ### Contributor
  * [Iosky07](https://github.com/iosky07) - Yoski Tanjung
  * [Darkun7](https://github.com/darkun7) - Hartawan Bahari Mulyadi
+ * [JuanYohanesAteta](https://github.com/juanyohanesateta) - Yohanes Ateta
 ### Lincense
 Copyright 2019 Darkun7
 Licensed under the Apache License, Version 2.0 (the "License");
