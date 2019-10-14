@@ -113,7 +113,7 @@ font-weight: normal;
   @media only screen and (max-width: 768px) {
     [class*="col-"]{
       width: 100%;
-      float: none;
+      float: left;
       position: static;
       display: block;
       margin-left: auto !important;
@@ -612,4 +612,11 @@ ul #now{
 }
 #default img{
   max-width: 300px;
+}
+/*##############################
+  ##########Validation##########
+  ##############################*/
+small{
+  color: var(--color-pink);
+  padding: 0px 0 10px 0;
 }

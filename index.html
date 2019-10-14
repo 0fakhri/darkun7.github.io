@@ -17,7 +17,7 @@
       <a href="index.html"><img id="logo" src="assets/img/logo-dark.png" alt=""></a>
     </ul>
     <ul class="nav-right">
-        <li><a href="index.html">Beranda</a></li>
+        <li><a href="#home-banner">Beranda</a></li>
         <li><a href="tentang.html">Tentang</a></li>
         <li><a href="#" style="padding-top:7px;">Pendidikan<i class="fas fa-caret-down"></i></a>
             <ul>
@@ -49,7 +49,8 @@
     <div class="grid centered">
       <div class="grid-content col-1">
         <h2>Alasan Memilih "Planet Belajar"</h2>
-        <p>Praesent sapien felis, ultricies sit amet luctus sit amet, tempor in quam. Suspendisse potenti. Praesent rhoncus erat est, non pellentesque neque maximus non. Proin ornare libero a nunc ultrices suscipit. Proin non porttitor est. Aliquam viverra vehicula enim, nec blandit ex tempor at. Nullam commodo at elit ac luctus. Proin sit amet nisl eu quam tempus accumsan. Duis a orci vehicula, interdum nisi a, bibendum sem. Nullam euismod eget ipsum vitae luctus. Nulla id nulla auctor, eleifend nisl nec, congue augue. </p>
+        <p>Mengapa harus memilih Planet Belajar? Karena selain memiliki metode pembelajaran yang efektif, juga terdapat tutor-tutor asik yang pastinya gak ngebosenin banget buat belajar. Selain itu para tutor disini memiliki metode-metode yang dapat menyederhanakan pembelajaran supaya lebih cepat dan mudah dipahami oleh para murid.
+Planet Belajar sudah memiliki lisensi serta mendapatkan penghargaan sebagai bimbel terbaik pada tahun 2019. Jadi tidak bisa diragukan lagi tentunya dong. Ayo semuanya mari kita ikut bimbel di Planet Belajar. Belajar jadi makin asik bersama Planet Belajar. </p>
       </div>
       <div class="grid-content col-3">
         <img class="centered ilus" src="assets/img/illus-00.png">
@@ -61,15 +62,18 @@
       <h2 id="section-title">TESTIMONI</h2>
       <div class="grid-content col-3">
         <img src="assets/img/stud-00.png" alt="Testimoni Siswa">
-        <p>Nunc sed consequat risus. Quisque massa enim, laoreet rutrum erat. Curabitur lobortis porta neque id viverra.</p>
+        <p>Saya suka banget ikut bimbel di Planet Belajar karena tutornya asik dan juga mudah dipahami saat mengajar.</p>
+        <p style="font-style:italic;">~Ismu Seto</p>
       </div>
       <div class="grid-content col-3">
         <img src="assets/img/stud-01.png" alt="Testimoni Siswa">
-        <p>Nunc sed consequat risus. Quisque massa enim, laoreet rutrum erat. Curabitur lobortis porta neque id viverra.</p>
+        <p>Tutornya asik dan dapat memberikan implementasi yang mudah dipahami saat mengajar.</p>
+        <p style="font-style:italic;">~Larasati Dwi Putri</p>
       </div>
       <div class="grid-content col-3">
         <img src="assets/img/stud-02.png" alt="Testimoni Siswa">
-        <p>Nunc sed consequat risus. Quisque massa enim, laoreet rutrum erat. Curabitur lobortis porta neque id viverra.</p>
+        <p>Matematika dan Fisika yang sulit serta banyak memiliki rumus-rumus rumit, bisa diubah menjadi sesuatu yang mudah dimengerti .</p>
+        <p style="font-style:italic;">~Nada Camelina</p>
       </div>
     </div>
     <div class="centered-btn">
@@ -81,14 +85,14 @@
       <div class="register-box">
         <form action="login.html" class="formulir" style="margin-top: 100px;">
           <h2 id="section-title">PENDAFTARAN</h2>
-          <input type="text" value="" placeholder="Nama Lengkap" required>
-		  <small id="for-fullname"></small>
-          <input type="email" value="" placeholder="Email" id="email"required>
-		  <small id="for-email"></small>
-          <input type="password" value="" placeholder="Password" id="pswd" required>
-		  <small id="for-pswd"></small>
-          <input type="password" value="" placeholder="Konfirmasi Password" id="pswd-verify" required>
-		  <small id="for-pswd-verify"></small>
+          <small id="for-fullname"></small>
+          <input id="fullname" type="text" onkeyup="fill_fullname()" placeholder="Nama Lengkap" required>
+          <small id="for-email"></small>
+          <input id="email" type="email" onkeyup="fill_email()" placeholder="Email" id="email"required>
+          <small id="for-pswd"></small>
+          <input id="pswd" type="password" onkeyup="fill_pswd()" placeholder="Password" id="pswd" required>
+          <small id="for-pswdVerify"></small>
+          <input id="pswdVerify" type="password" onkeyup="fill_pswdVerify()" placeholder="Konfirmasi Password" id="pswd-verify" required>
           <input class="btn-lb" type="submit" value="Daftar">
         </form>
       </div>
@@ -99,23 +103,23 @@
       <h2 id="section-title">MENTOR</h2>
       <div class="grid-content col-2">
         <img src="assets/img/mentor-00.png" alt="Mentor">
-        <h3>Nama Mentor</h3>
-        <p>Nunc sed consequat risus. Quisque massa enim, laoreet rutrum erat. Curabitur lobortis porta neque id viverra.</p>
+        <h3>Drs.Minshittar Carerra,M.pd</h3>
+        <p>Fisika? Jangan khawatir ada saya disini.</p>
       </div>
       <div class="grid-content col-2">
         <img src="assets/img/mentor-01.png" alt="Mentor">
-        <h3>Nama Mentor</h3>
-        <p>Nunc sed consequat risus. Quisque massa enim, laoreet rutrum erat. Curabitur lobortis porta neque id viverra.</p>
+        <h3>Drs. Harun Ar-Rasyid,M.pd</h3>
+        <p>Biologi itu jangan fokus dihafal, cukup dipahami aja.</p>
       </div>
       <div class="grid-content col-2">
         <img src="assets/img/mentor-02.png" alt="Mentor">
-        <h3>Nama Mentor</h3>
-        <p>Nunc sed consequat risus. Quisque massa enim, laoreet rutrum erat. Curabitur lobortis porta neque id viverra.</p>
+        <h3>Sylviana Dewi,S.pd,.M.pd</h3>
+        <p>Kimia itu ada sekitar kita dan gak sesulit yang dibayangkan kok.</p>
       </div>
       <div class="grid-content col-2">
         <img src="assets/img/mentor-03.png" alt="Mentor">
-        <h3>Nama Mentor</h3>
-        <p>Nunc sed consequat risus. Quisque massa enim, laoreet rutrum erat. Curabitur lobortis porta neque id viverra.</p>
+        <h3>Drs. Muhammad Thoriq,M.pd</h3>
+        <p>Beritung itu asik kok, jangan dibuat susah. Yuk belajar bareng.</p>
       </div>
     </div>
   </section>
@@ -126,7 +130,7 @@
       <div class="grid centered">
         <div class="grid-content col-3">
           <img class="centered" src="assets/img/logo-dark.png" alt="Planet Belajar">
-          <p>Mauris mi erat, aliquam vel efficitur sed, convallis vitae arcu. Sed feugiat ipsum id rhoncus malesuada. Sed tristique purus eget molestie ullamcorper.</p>
+          <p>Platform media belajar yang interaktif. Menerapkan metode belajar yang unik dan asik untuk meningkatkan minat siswa. Dilengkapi dengan bank soal yang banyak dan selalu diperbaharui berdasar kurikulum terbaru.</p>
         </div>
         <div class="grid-content col-4">
           <h3>Site Map</h3>
@@ -163,15 +167,20 @@
   <!-- /*Footer END*/ -->
   </body>
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/validation.js"></script>
   <script src="assets/js/fontawesome.min.js"></script>
   <script type="text/javascript">
   /*===Scrolling===*/
-  run();
+  var pos = 1;
   function run(){
-    if(getWidth()<768){
+    if(getWidth()<768){//true jika mobile
       document.getElementById("logo").src = "assets/img/logo.png";
     }else{
-      document.getElementById("logo").src = "assets/img/logo-dark.png";
+      if(pos<90){//jika diatas
+        document.getElementById("logo").src = "assets/img/logo-dark.png";
+      }else{
+        document.getElementById("logo").src = "assets/img/logo.png";
+      }
     }
   }
   window.addEventListener('resize', run);
@@ -180,6 +189,7 @@
     let nav = document.querySelector('nav');
     if(scroll>90){
       if(navOff){
+        run();
         document.getElementById("logo").src = "assets/img/logo.png";
         nav.classList.remove("navOff");
       }
@@ -190,13 +200,14 @@
             document.getElementById("logo").src = "assets/img/logo.png";
           }else{
             document.getElementById("logo").src = "assets/img/logo-dark.png";
+
           }
         nav.classList.add("navOff");
       }
       navOff = false;
     }
   }
-  let pos = 0;
+
   let tick = false;
   window.addEventListener('scroll', function(e) {
     pos = window.scrollY;
