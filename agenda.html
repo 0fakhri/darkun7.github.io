@@ -28,6 +28,27 @@
       color: var(--color-light-blue);
       text-decoration: none;
     }
+    #banner{
+      min-height: 440px;
+      background-color: #ccc;
+      background-image: url("img/banner-agenda.png");
+    }
+    #default{
+      background-color: var(--color-orange);
+      margin: 0 10%;
+      border-radius: 15px;
+      display: absolute;
+      padding: 0px;
+    }
+    .red{
+      min-height: 50px;
+      width: 100%;
+      background-color: var(--color-pink);
+      color: #fff;
+      font-family: 'Francois One', sans-serif;
+      font-size: 40pt;
+      text-align: center;
+    }
   </style>
   </head>
   <body>
@@ -53,14 +74,26 @@
   <a href="javascript:void(0);" onclick="toggleNav()"><div class="menu"><span class="bar"></span></div></a>
   <!-- /*Navbar END*/ -->
   <!-- /*Content START*/ -->
-  <section id="breadcrumb">
-    <ul class="bc-inline">
-      <a href="index.html">Beranda</a>
-      <li>Pendidikan</li>
-      <li id="now">SD</li>
-    </ul>
+  <section id="banner">
+    <div class="banner-img">
+      <div class="banner-inner">
+      </div>
+    </div>
   </section>
+  <section id="default">
+    <div class="grid centered">
+      <div class="grid-content col-1">
+        <h1>Event Title</h1>
+        <p>Integer rutrum velit ut suscipit ultrices. Vivamus scelerisque commodo quam eget vulputate. Fusce pretium orci ac tempor placerat.</p>
+      </div>
+      <div class="red">
+        <p>00 Hari 00 Jam 00 Menit </p>
+      </div>
+      <div class="grid-content col-1">
 
+      </div>
+    </div>
+  </section>
   <!-- /*Content END*/ -->
   <!-- /*Footer START*/ -->
   <footer>
