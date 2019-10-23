@@ -34,11 +34,12 @@
       background-image: url("img/banner-agenda.png");
     }
     #default{
+      position: relative;
       background-color: var(--color-orange);
-      margin: 0 10%;
+      margin: -80px 10% 30px 10%;
       border-radius: 15px;
       display: absolute;
-      padding: 0px;
+      padding: 20px 0px;
     }
     .red{
       min-height: 50px;
@@ -46,8 +47,27 @@
       background-color: var(--color-pink);
       color: #fff;
       font-family: 'Francois One', sans-serif;
-      font-size: 40pt;
+
       text-align: center;
+    }
+    .red p{
+      font-size: 24pt;
+      margin: 0;
+    }
+    .red span{
+      font-size: 40pt;
+    }
+    h1{
+      margin-top: 0px;
+      text-align: center;
+    }
+    #desc{
+      padding: 0 25px;
+      text-align: justify;
+    }
+    #sk, ul#sk{
+      text-align: center;
+      list-style: none;
     }
   </style>
   </head>
@@ -82,15 +102,21 @@
   </section>
   <section id="default">
     <div class="grid centered">
-      <div class="grid-content col-1">
-        <h1>Event Title</h1>
-        <p>Integer rutrum velit ut suscipit ultrices. Vivamus scelerisque commodo quam eget vulputate. Fusce pretium orci ac tempor placerat.</p>
-      </div>
+      <h1>Try Out SBMPTN 2022</h1>
+      <p id="desc">Try Out yang dipersiapkan untuk para pelajar SMA agar lebih siap dalam menghadapi SBMPTN 2022. Planet Belajar menyusun prediksi paket soal dari 5 tahun terakhir untuk dapat memastikan peserta mampu bersaing dalam ujian yang sebenarnya. Tidak hanya itu, kami menyediakan pembahasan soal tepat setelah pengumuman ranking dan akan dibagikan melalui laman website kami. Setiap peserta diharap untuk mempersiapkan diri dan memenuhi persyaratan agar dapat mengikuti ujian ini.</p>
       <div class="red">
-        <p>00 Hari 00 Jam 00 Menit </p>
+        <p>Pendaftaran</p>
+        <span class="localtime" data-start="1579565600" data-end="1582177540" data-text-start="%s" data-text-end="%s" data-text-after="Ditutup" data-start-time="1571565600000" data-end-time="1572177540000">3d 18h.</span>
       </div>
-      <div class="grid-content col-1">
-
+      <p id="sk"><b>Syarat & Ketentuan</b>
+        <ul id="sk">
+          <li>Tidak dikenakan biaya tambahan</li>
+          <li>Terdaftar dalam Paket SMA Kelas 3</li>
+          <li>Telah menyelesaikan 3 set Soal latihan pada tiap matkul yang diujikan</li>
+        </ul>
+      </p>
+      <div class="centered-btn">
+        <a class="btn-lb" href="login.html">Gabung Sekarang</a>
       </div>
     </div>
   </section>
@@ -139,4 +165,5 @@
   </body>
   <script src="assets/js/main.js"></script>
   <script src="assets/js/fontawesome.min.js"></script>
+  <script src="assets/js/timer.js"></script>
 </html>
