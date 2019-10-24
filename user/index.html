@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dasbor-Planet Belajar</title>
+  <link rel="shortcut icon" type="image/png" href="../assets/img/favicon.ico">
+  <link rel="stylesheet" href="../assets/css/main.css" type="text/css" charset="utf-8">
+  <link rel="stylesheet" href="../assets/css/content.css" type="text/css" charset="utf-8">
+  <link rel="stylesheet" href="../assets/css/user.css" type="text/css" charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Francois+One&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a6281931cd.js" crossorigin="anonymous"></script>
+  <style media="screen">
+    .grid-block {
+      display: grid;
+      grid-template-columns: 170px 170px 170px;
+      background-color: #fff;
+      padding: 10px;
+      grid-gap: 10px;
+    }
+    .grid-block a{
+      color: #000;
+    }
+    .grid-item {
+      background-color: var(--color-light-grey);
+      padding: 20px;
+      font-size: 24px;
+      text-align: center;
+    }
+    @media screen and (max-width: 768px) {
+      .grid-block {
+        grid-template-columns: 170px 170px;
+      }
+    }
+  </style>
+  </head>
+  <body>
+  <!-- /*Navbar START*/ -->
+  <nav class="sticky-top">
+    <ul class="nav-left" >
+      <a href="index.html"><img id="logo" src="../assets/img/logo.png" alt=""></a>
+    </ul>
+    <div class="user" onclick="userColapse()">
+      <div class="btn-lb">
+        <img src="../assets/img/user-icon.png" alt="">
+        <b>User</b>
+      </div>
+      <div class="sub-user">
+        <ol>
+          <li><a href="javascript:void(0);" onclick="modalOpen(pengaturanAkun)">Pengaturan Akun</a></li>
+          <li><a href="../index.html">Logout</a></li>
+        </ol>
+      </div>
+    </div>
+    <ul class="nav-right">
+        <li><a href="index.html">Dasbor</a></li>
+        <li><a href="#" style="padding-top:4px;">Mata Pelajaran<i class="fas fa-caret-down"></i></a>
+            <ul>
+                <li><a href="mata-pelajaran.html">Matematika</a></li>
+                <li><a href="mata-pelajaran.html">Fisika</a></li>
+                <li><a href="mata-pelajaran.html">Biologi</a></li>
+                <li><a href="mata-pelajaran.html">Geografi</a></li>
+                <li><a href="mata-pelajaran.html">Ekonomi</a></li>
+                <li><a href="mata-pelajaran.html">Sejarah</a></li>
+            </ul>
+        </li>
+    </ul>
+  </nav>
+  <a href="javascript:void(0);" onclick="toggleNav()"><div class="menu"><span class="bar"></span></div></a>
+  <!-- /*Navbar END*/ -->
+  <!-- /*Content START*/ -->
+  <section id="default">
+    <div class="">
+      <a class="slider-menu" href="javascript:void(0);" onclick="slider(1)">Pembelajaran</a>
+      <a class="slider-menu" href="javascript:void(0);" onclick="slider(2)">Agenda</a>
+      <div class="slider-contain">
+        <div class="grid centered">
+          <div class="grid-content col-1">
+            <div class="slide">
+              <h3>Mata Pelajaran</h3>
+              <form action="" method="post">
+                <input type="text" name="" value="" style="max-width:300px;">
+                <a href="#"><i class="fas fa-search"></i></a>
+              </form>
+              <div class="grid-block">
+                <a href="mata-pelajaran.html"><div class="grid-item">
+                  <i class="fas fa-dice-d20"></i><br>
+                  Matematika
+                </div></a>
+                <a href="mata-pelajaran.html"><div class="grid-item">
+                  <i class="fas fa-apple-alt"></i><br>
+                  Fisika
+                </div></a>
+                <a href="mata-pelajaran.html"><div class="grid-item">
+                  <i class="fas fa-dna"></i><br>
+                  Biologi
+                </div></a>
+                <a href="mata-pelajaran.html"><div class="grid-item">
+                  <i class="fas fa-atlas"></i><br>
+                  Geografi
+                </div></a>
+                <a href="mata-pelajaran.html"><div class="grid-item">
+                  <i class="fas fa-chart-bar"></i><br>
+                  Ekonomi
+                </div></a>
+                <a href="mata-pelajaran.html"><div class="grid-item">
+                  <i class="fas fa-fast-backward"></i><br>
+                  Sejarah
+                </div></a>
+              </div>
+            </div>
+            <div class="slide">
+              <h3>Agenda</h3>
+              <div class="sub-list" onclick="modalOpen(agenda)">
+                <h4>Try Out SBMPTN 2022</h4>
+                <p>Try Out yang dipersiapkan untuk para pelajar SMA agar lebih siap dalam menghadapi SBMPTN 2022. Planet Belajar menyusun prediksi paket soal da...</p>
+                <div class="btn-text">
+                  <a href="#"></a>
+                  <span class="localtime" data-start="1579565600" data-end="1582177540" data-text-start="%s" data-text-end="%s" data-text-after="Ditutup" data-start-time="1571565600000" data-end-time="1572177540000">3d 18h.</span>
+                </div>
+              </div>
+              <div class="sub-list" onclick="modalOpen(agenda)">
+                <h4>Study Camp</h4>
+                <p>Belajar bersama dialam terbuka, mempelajari misteri dari kehidupan secara langsung, agenda ini tersedi untuk pelajar Kelas 1 SMP s/d 2 SMA anda...</p>
+                <div class="btn-text">
+                  <a href="#"></a>
+                  <span class="localtime" data-start="1572565600" data-end="1579177540" data-text-start="%s" data-text-end="%s" data-text-after="Ditutup" data-start-time="1571565600000" data-end-time="1572177540000">3d 18h.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="grid-content col-3" id="tugas">
+            <h3>Tugas</h3>
+            <ul>
+              <li class="sub-list"><a href="detail-tugas.html">Matematika Latihan Soal 3</a></li>
+              <li class="sub-list"><a href="detail-tugas.html">Fisika Pengayaan 2</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /*Content END*/ -->
+  <!-- /*Footer START*/ -->
+  <footer>
+    <div class="footer">
+    </div>
+    <div class="site-footer">
+      <p>Planet Belajar ©2019. Seluruh Hak Cipta Dilindungi.</p>
+    </div>
+  </footer>
+  <!-- /*Footer END*/ -->
+  <!-- Modal START -->
+  <div id="agenda" class="modal">
+    <div class="modal-contain">
+      <i class="far fa-times-circle" onclick="modalClose(agenda)"></i>
+      <h3>Agenda</h3>
+      <p>Try Out yang dipersiapkan untuk para pelajar SMA agar lebih siap dalam menghadapi SBMPTN 2022. Planet Belajar menyusun prediksi paket soal dari 5 tahun terakhir untuk dapat memastikan peserta mampu bersaing dalam ujian yang sebenarnya. Tidak hanya itu, kami menyediakan pembahasan soal tepat setelah pengumuman ranking dan akan dibagikan melalui laman website kami. Setiap peserta diharap untuk mempersiapkan diri dan memenuhi persyaratan agar dapat mengikuti ujian ini.</p>
+      <div class="btn-text">
+        <a href="#"></a>
+        <span class="localtime" data-start="1579565600" data-end="1582177540" data-text-start="%s" data-text-end="%s" data-text-after="Ditutup" data-start-time="1571565600000" data-end-time="1572177540000">3d 18h.</span>
+      </div>
+      <p id="sk"><b>Syarat & Ketentuan</b>
+        <ul id="sk">
+          <li>Tidak dikenakan biaya tambahan</li>
+          <li>Terdaftar dalam Paket SMA Kelas 3</li>
+          <li>Telah menyelesaikan 3 set Soal latihan pada tiap matkul yang diujikan</li>
+        </ul>
+      </p>
+      <input class="btn-lb" type="submit" value="Partisipasi">
+    </div>
+  </div>
+  <div id="pengaturanAkun" class="modal">
+    <div class="modal-contain">
+      <i class="far fa-times-circle" onclick="modalClose(pengaturanAkun)"></i>
+      <h3>Pengaturan Akun</h3>
+      <form action="index.html" method="post">
+        <small id="for-fullname"></small>
+        <input value="Hartawan Tanjung Ateta" id="fullname" type="text" onkeyup="fill_fullname()" placeholder="Nama Lengkap" required>
+        <small id="for-email"></small>
+        <input value="perwebC5@unej.ac.id" id="email" type="email" onkeyup="fill_email()" placeholder="Email" id="email"required>
+        <small id="for-pswd"></small>
+        <input id="pswd" type="password" onkeyup="fill_pswd()" placeholder="Password" id="pswd" required>
+        <small id="for-pswdVerify"></small>
+        <input id="pswdVerify" type="password" onkeyup="fill_pswdVerify()" placeholder="Konfirmasi Password" id="pswd-verify" required>
+        <input class="btn-lb" type="submit" value="Daftar">
+      </form>
+    </div>
+  </div>
+  <!-- Modal END -->
+  </body>
+  <script src="../assets/js/timer.js"></script>
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/modal.js"></script>
+  <script src="../assets/js/fontawesome.min.js"></script>
+  <script src="../assets/js/validation.js"></script>
+  <script type="text/javascript">
+    slider(1);
+  </script>
+</html>
+                                                                                                                              

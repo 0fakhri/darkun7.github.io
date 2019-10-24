@@ -49,15 +49,35 @@ console.log("Main.JS Connected");
 //   isActive = !isActive;
 // });
 // });
+  /*===Slider @ User Page===*/
+  var current = 1;
+  function slider(index){
+    var slide = document.getElementsByClassName("slide");
+    for (i = 0; i < slide.length; i++) {
+        slide[i].classList.remove("current");
+    }
+    slide[index-1].classList.add("current");
+  }
 
 
   /*===Page Width===*/
-function getWidth() {
-  return Math.max(
-    document.body.scrollWidth,
-    document.documentElement.scrollWidth,
-    document.body.offsetWidth,
-    document.documentElement.offsetWidth,
-    document.documentElement.clientWidth
-  );
-}
+  function getWidth() {
+    return Math.max(
+      document.body.scrollWidth,
+      document.documentElement.scrollWidth,
+      document.body.offsetWidth,
+      document.documentElement.offsetWidth,
+      document.documentElement.clientWidth
+    );
+  }
+  /*===Colapse User===*/
+  var userState = true;
+  function userColapse(){
+    var subUser = document.getElementsByClassName("sub-user");
+    if(userState){
+      subUser[0].style.display="block";
+    }else{
+      subUser[0].style.display="none";
+    }
+    userState = !userState;
+  }
