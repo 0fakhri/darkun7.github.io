@@ -96,3 +96,23 @@ li.sub-list{
 .filebox a{
   color: #000;
 }
+.file-upload{
+  border: 1px solid var(--color-dark-grey);
+  display: inline-block;
+  border-radius: 5px;
+  padding: 6px 12px;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+.fa-file-pdf,.fa-file-pdf:hover{
+  color: #F21800;
+}
+.fa-file-powerpoint,.fa-file-powerpoint:hover{
+  color: #D53C14;
+}
+.fa-file-word,.fa-file-word:hover{
+  color: #2B5593;
+}
+.fa-file-excel,.fa-file-excel:hover{
+  color: #01723A;
+}
