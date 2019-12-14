@@ -60,6 +60,7 @@ section{
   float: none;
 }
 #pendaftaran{
+  padding-bottom: 50px;
   background-image: url('../../assets/img/bg-decorative-darkblue.png');
   background-size: cover;
   background-repeat: no-repeat;

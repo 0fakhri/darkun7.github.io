@@ -595,7 +595,7 @@ small{
 .modal{
   display: none;
   opacity: 0;
-  transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.4s;
   width: 100%;
   height: 100%;
   background-color:
@@ -625,6 +625,22 @@ small{
   color: red;
 }
 /*##############################
+  ##########Animation###########
+  ##############################*/
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/*##############################
   ###########Slider#############
   ##############################*/
 .slider-menu{
@@ -648,8 +664,4 @@ small{
 }
 .current{
   display: block;
-}
-
-@media screen and (max-width: 768px) {
-
 }

@@ -1,0 +1,17 @@
+{
+  "1":{
+    "nama"  : "Lani Clara",
+    "pesan" : "Belajarnya asik dan seru!",
+    "img"   : "assets/img/stud-04.png"
+  },
+  "2":{
+    "nama"  : "Reza Palevi",
+    "pesan" : "Cara belajar kekinian, bikin betah terus belajarnya!",
+    "img"   : "assets/img/stud-05.png"
+  },
+  "3":{
+    "nama"  : "Budi Setyadi",
+    "pesan" : "Jutaan orang tidak tahu bahwa belajar di Planet Belajar sungguh asik! Anda salah satunya.",
+    "img"   : "assets/img/stud-06.png"
+  }
+}

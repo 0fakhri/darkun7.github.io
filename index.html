@@ -58,7 +58,7 @@ Planet Belajar sudah memiliki lisensi serta mendapatkan penghargaan sebagai bimb
     </div>
   </section>
   <section id="testimoni">
-    <div class="grid centered">
+    <div class="grid centered" id= "testi">
       <h2 id="section-title">TESTIMONI</h2>
       <div class="grid-content col-3">
         <img src="assets/img/stud-00.png" alt="Testimoni Siswa">
@@ -77,7 +77,7 @@ Planet Belajar sudah memiliki lisensi serta mendapatkan penghargaan sebagai bimb
       </div>
     </div>
     <div class="centered-btn">
-      <a href="#" class="btn-lb-outline">Tampilkan Semua</a>
+      <a id="semua" class="btn-lb-outline">Tampilkan Semua</a>
     </div>
   </section>
   <section id="pendaftaran">
@@ -89,10 +89,49 @@ Planet Belajar sudah memiliki lisensi serta mendapatkan penghargaan sebagai bimb
           <input id="fullname" type="text" onkeyup="fill_fullname()" placeholder="Nama Lengkap" required>
           <small id="for-email"></small>
           <input id="email" type="email" onkeyup="fill_email()" placeholder="Email" id="email"required>
+          <input id="tgl-lahir" type="date" required>
           <small id="for-pswd"></small>
           <input id="pswd" type="password" onkeyup="fill_pswd()" placeholder="Password" id="pswd" required>
           <small id="for-pswdVerify"></small>
           <input id="pswdVerify" type="password" onkeyup="fill_pswdVerify()" placeholder="Konfirmasi Password" id="pswd-verify" required>
+          <select name="provinsi" id="provinsi" class="form-control" onchange="showKota()">
+              <option value="0" selected>- Pilih Provinsi -</option>
+              <option value="1">Aceh</option>
+              <option value="2">Sumatera Utara</option>
+              <option value="3">Sumatera Barat</option>
+              <option value="4">Riau</option>
+              <option value="5">Jambi</option>
+              <option value="7">Bengkulu</option>
+              <option value="6">Sumatera Selatan</option>
+              <option value="8">Lampung</option>
+              <option value="10">Kepulauan Riau</option>
+              <option value="9">Kepulauan Bangka Belitung</option>
+              <option value="16">Banten</option>
+              <option value="12">Jawa Barat</option>
+              <option value="11">DKI Jakarta</option>
+              <option value="13">Jawa Tengah</option>
+              <option value="15">Jawa Timur</option>
+              <option value="14">Daerah Istimewa Yogyakarta</option>
+              <option value="17">Bali</option>
+              <option value="18">Nusa Tenggara Barat</option>
+              <option value="19">Nusa Tenggara Timur</option>
+              <option value="20">Kalimantan Barat</option>
+              <option value="22">Kalimantan Selatan</option>
+              <option value="21">Kalimantan Tengah</option>
+              <option value="23">Kalimantan Timur</option>
+              <option value="26">Sulawesi Selatan</option>
+              <option value="27">Sulawesi Tenggara</option>
+              <option value="24">Sulawesi Utara</option>
+              <option value="28">Gorontalo</option>
+              <option value="30">Maluku</option>
+              <option value="33">Papua Barat</option>
+              <option value="32">Papua</option>
+              <option value="31">Maluku Utara</option>
+              <option value="25">Sulawesi Tengah</option>
+          </select>
+          <select name="kota" id="kota" class="form-control">
+              <option selected="selected" value="0">- Pilih Kota -</option>
+          </select>
           <input class="btn-lb" type="submit" value="Daftar">
         </form>
       </div>
@@ -166,7 +205,10 @@ Planet Belajar sudah memiliki lisensi serta mendapatkan penghargaan sebagai bimb
   </footer>
   <!-- /*Footer END*/ -->
   </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/kota.js"></script>
+  <script src="assets/js/more_testi.js"></script>
   <script src="assets/js/validation.js"></script>
   <script src="assets/js/fontawesome.min.js"></script>
   <script type="text/javascript">

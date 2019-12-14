@@ -6,51 +6,9 @@
   <title>Daftar-Planet Belajar</title>
   <link rel="shortcut icon" type="image/png" href="assets/img/favicon.ico">
   <link rel="stylesheet" href="assets/css/main.css" type="text/css" charset="utf-8">
+  <link rel="stylesheet" href="assets/css/login-register.css">
   <link href="https://fonts.googleapis.com/css?family=Francois+One&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/a6281931cd.js" crossorigin="anonymous"></script>
-
-  <style media="screen">
-    body{
-      background-color: var(--color-dark-blue);
-    }
-    section#daftar{
-      background-color: #fff;
-      background-image: url('assets/img/bg-decorative-darkblue.png');
-      background-position: bottom;
-      background-repeat: no-repeat;
-      background-size: 100% 45%;
-    }
-    .formulir{
-      max-width: 80%;
-    }
-    #section-title{
-      text-align: center;
-      margin: 5px 0;
-    }
-    form .btn-lb{
-      margin-top: 10px;
-    }
-    form .mime{
-      text-align: center;
-      margin-top: 0px;
-    }
-    .ilus{
-      margin-top: 120px;
-      margin-left: 20%;
-      width: 196px;
-    }
-    .motd{
-      text-align: center;
-      margin-left: 12;
-      width: 310px;
-      color: #fff;
-    }
-    @media only screen and (max-width: 768px) {
-      .motd{
-        width: auto;
-      }
-    }
-  </style>
   </head>
   <body>
   <!-- /*Navbar START*/ -->
@@ -85,10 +43,49 @@
             <input id="fullname" type="text" onkeyup="fill_fullname()" placeholder="Nama Lengkap" required>
             <small id="for-email"></small>
             <input id="email" type="email" onkeyup="fill_email()" placeholder="Email" id="email"required>
+            <input id="tgl-lahir" type="date" required>
             <small id="for-pswd"></small>
             <input id="pswd" type="password" onkeyup="fill_pswd()" placeholder="Password" id="pswd" required>
             <small id="for-pswdVerify"></small>
             <input id="pswdVerify" type="password" onkeyup="fill_pswdVerify()" placeholder="Konfirmasi Password" id="pswd-verify" required>
+            <select name="provinsi" id="provinsi" class="form-control" onchange="showKota()">
+                <option value="0" selected>- Pilih Provinsi -</option>
+                <option value="1">Aceh</option>
+                <option value="2">Sumatera Utara</option>
+                <option value="3">Sumatera Barat</option>
+                <option value="4">Riau</option>
+                <option value="5">Jambi</option>
+                <option value="7">Bengkulu</option>
+                <option value="6">Sumatera Selatan</option>
+                <option value="8">Lampung</option>
+                <option value="10">Kepulauan Riau</option>
+                <option value="9">Kepulauan Bangka Belitung</option>
+                <option value="16">Banten</option>
+                <option value="12">Jawa Barat</option>
+                <option value="11">DKI Jakarta</option>
+                <option value="13">Jawa Tengah</option>
+                <option value="15">Jawa Timur</option>
+                <option value="14">Daerah Istimewa Yogyakarta</option>
+                <option value="17">Bali</option>
+                <option value="18">Nusa Tenggara Barat</option>
+                <option value="19">Nusa Tenggara Timur</option>
+                <option value="20">Kalimantan Barat</option>
+                <option value="22">Kalimantan Selatan</option>
+                <option value="21">Kalimantan Tengah</option>
+                <option value="23">Kalimantan Timur</option>
+                <option value="26">Sulawesi Selatan</option>
+                <option value="27">Sulawesi Tenggara</option>
+                <option value="24">Sulawesi Utara</option>
+                <option value="28">Gorontalo</option>
+                <option value="30">Maluku</option>
+                <option value="33">Papua Barat</option>
+                <option value="32">Papua</option>
+                <option value="31">Maluku Utara</option>
+                <option value="25">Sulawesi Tengah</option>
+            </select>
+            <select name="kota" id="kota" class="form-control">
+                <option selected="selected" value="0">- Pilih Kota -</option>
+            </select>
             <input class="btn-lb" type="submit" value="Daftar">
             <p class="mime">Sudah punya akun? <a href="login.html">Masuk</a></p>
           </form>
@@ -143,7 +140,9 @@
   </footer>
   <!-- /*Footer END*/ -->
   </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/kota.js"></script>
   <script src="assets/js/fontawesome.min.js"></script>
   <script src="assets/js/validation.js"></script>
 </html>

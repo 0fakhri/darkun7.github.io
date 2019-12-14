@@ -2,6 +2,9 @@
   background-color: #fff;
   min-height: 530px;
 }
+a{
+  color: var(--color-dark-blue);
+}
 body{
   background-color: var(--color-dark-blue);
 }

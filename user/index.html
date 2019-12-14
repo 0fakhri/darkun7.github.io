@@ -77,6 +77,8 @@
         <div class="grid centered">
           <div class="grid-content col-1">
             <div class="slide">
+              <h3>Capaian Belajar</h3>
+              <canvas id="chart" width="500" height="400"></canvas>
               <h3>Mata Pelajaran</h3>
               <form action="" method="post">
                 <input type="text" name="" value="" style="max-width:300px;">
@@ -183,7 +185,7 @@
         <input id="pswd" type="password" onkeyup="fill_pswd()" placeholder="Password" id="pswd" required>
         <small id="for-pswdVerify"></small>
         <input id="pswdVerify" type="password" onkeyup="fill_pswdVerify()" placeholder="Konfirmasi Password" id="pswd-verify" required>
-        <input class="btn-lb" type="submit" value="Daftar">
+        <input class="btn-lb" type="submit" value="Simpan">
       </form>
     </div>
   </div>
@@ -196,6 +198,27 @@
   <script src="../assets/js/validation.js"></script>
   <script type="text/javascript">
     slider(1);
+    var canvas = document.getElementById("chart");
+    var grafik = canvas.getContext("2d");
+    grafik.rect(80, 56, 5, 314);
+    grafik.rect(85, 370, 318, -6);
+    grafik.moveTo(84,162);
+    grafik.lineTo(157,141);
+    grafik.moveTo(157,141);
+    grafik.lineTo(227,139);
+    grafik.moveTo(227,139);
+    grafik.lineTo(301,111);
+    grafik.moveTo(301,111);
+    grafik.lineTo(371,99);
+    grafik.moveTo(371,99);
+    grafik.lineTo(373,366);
+    grafik.moveTo(300,110);
+    grafik.lineTo(303,363);
+    grafik.moveTo(225,140);
+    grafik.lineTo(229,362);
+    grafik.moveTo(156,140);
+    grafik.lineTo(157,361);
+    grafik.stroke();
   </script>
 </html>
                                                                                                                               

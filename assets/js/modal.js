@@ -16,8 +16,9 @@ async function modalClose(modal){
 
 async function modalOpen(target){
   // var target = document.getElementById(id)
+  target.style.display = "flex";
   target.style.opacity = "1";
+  target.firstElementChild.style.animation = "bounceIn 0.4s";
   target.style.transition = "opacity 0.3s ease-in-in";
   let delayres = await delay(300);
-  target.style.display = "flex";
 }
